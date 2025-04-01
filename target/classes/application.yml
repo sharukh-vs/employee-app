@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://dataserver-sql.database.windows.net:1433;database=database;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30
+    username: admin@1@dataserver-sql
+    password: Pro@code5
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      ddl-auto: update
